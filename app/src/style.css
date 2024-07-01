@@ -1,0 +1,14 @@
+@tailwind base; 
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-2xl font-bold
+  }
+}
+@layer components {
+  .card {
+    @apply bg-neutral-200 dark:bg-neutral-600 
+  }
+}
