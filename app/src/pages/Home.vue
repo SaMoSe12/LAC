@@ -1,11 +1,13 @@
-<script scoped lang="ts">
+<script setup lang="ts">
+
 import { ref, defineComponent } from 'vue'
-const count = ref(0)
+
 </script>
 <template>
     <div class="card">
-        <h1 class="text-blue-400 font-bold first-letter:text-blue-700 first-letter:font-thin first-letter:text-3xl">Hola
-            como estas</h1>
+        <h1 class="text-blue-400 font-bold hover:text-neutral-700">
+            Hola como estas
+        </h1>
     </div>
 </template>
 <style scoped></style>
