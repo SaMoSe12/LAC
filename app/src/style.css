@@ -6,6 +6,31 @@
   h1 {
     @apply text-2xl font-bold
   }
+
+  @font-face{
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins/Poppins-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+  }
+  @font-face{
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins/Poppins-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+  }
+  @font-face{
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins/Poppins-Light.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+  }
+  @font-face{
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins/Poppins-LightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+  }
 }
 @layer components {
   .card {

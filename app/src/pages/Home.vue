@@ -1,9 +1,9 @@
 <script setup lang="ts">
-
-import { ref, defineComponent } from 'vue'
+import Navbar from '../components/Navbar.vue';
 
 </script>
 <template>
+    <Navbar/>
     <div class="card">
         <h1 class="text-blue-400 font-bold hover:text-neutral-700">
             Hola como estas

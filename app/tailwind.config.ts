@@ -1,5 +1,7 @@
 import type { Config } from 'tailwindcss'
 import colors from 'tailwindcss/colors'
+import DefaultTheme from 'tailwindcss/defaultTheme'
+
 export default {
   darkMode: 'class',
   content: [
@@ -13,36 +15,14 @@ export default {
         secondary: colors.neutral[700],
         text: colors.neutral[400],
 
-        transparent: colors.transparent,
-        current: colors.current,
-        inherit: colors.inherit,
-
-        black: colors.black,
-        white: colors.white,
-
-        gray: colors.gray,
-        red: colors.red,
-        yellow: colors.amber,
-        green: colors.emerald,
-        blue: colors.blue,
-        indigo: colors.indigo,
-        purple: colors.violet,
-        pink: colors.pink,
-
-        slate: colors.slate,
-        zinc: colors.zinc,
-        neutral: colors.neutral,
-        stone: colors.stone,
-        orange: colors.orange,
-        lime: colors.lime,
-        teal: colors.teal,
-        cyan: colors.cyan,
-        sky: colors.sky,
-        fuchsia: colors.fuchsia,
-        rose: colors.rose,
-
+        ...DefaultTheme.colors
       }
     },
+    fontFamily: {
+      sans: ["poppins", ...DefaultTheme.fontFamily.sans],
+      title: ["Playwrite_CO"],
+      important: ["Great_VibesE"]
+    }
   },
   plugins: [],
 } satisfies Config
