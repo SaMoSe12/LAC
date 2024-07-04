@@ -1,7 +1,34 @@
 import { createApp } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
+
+import { OhVueIcon, addIcons } from 'oh-vue-icons'
+import { CiBtc, CiBtcd, CiEth, CiColorBtc, CiXrp } from 'oh-vue-icons/icons/ci'
+import { FaUser, FaUserPlus, FaPlus, FaTimes, FaBars, FaChartLine, FaSearch, FaStar, FaHeart, FaRegularHeart } from 'oh-vue-icons/icons/fa'
+import { RiUserStarLine } from 'oh-vue-icons/icons/ri'
+
 import './style.css'
+
 import App from './App.vue'
+
+addIcons(
+    CiBtc,
+    CiBtcd,
+    CiEth,
+    CiColorBtc,
+    CiXrp,
+    FaUser,
+    FaUserPlus,
+    FaPlus,
+    FaTimes,
+    FaBars,
+    FaChartLine,
+    FaSearch,
+    FaStar,
+    FaHeart,
+    FaRegularHeart,
+    RiUserStarLine
+)
+
 
 /**
  *?  Pages
@@ -24,4 +51,5 @@ const router = createRouter({
 
 createApp(App)
     .use(router)
+    .component('v-icon', OhVueIcon)
     .mount('#app')
