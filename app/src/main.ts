@@ -7,8 +7,14 @@ import App from './App.vue'
  *?  Pages
  **/
 import Home from './pages/Home.vue'
+import About from './pages/About.vue'
+import Servicios from './pages/Servicios.vue'
+import Contacto from './pages/Contacto.vue'
 const routes = [
-    { path: '/', component: Home }
+    { path: '/', component: Home },
+    { path: '/about', component: About },
+    { path: '/servicios', component: Servicios },
+    { path: '/contacto', component: Contacto },
 ]
 
 const router = createRouter({
