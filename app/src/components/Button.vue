@@ -5,8 +5,8 @@ defineProps<{
     icon?: string
     rounded?: boolean
     transparent?: boolean
+    innerClass?: string
 }>()
-defineEmits({})
 </script>
 <template>
     <button class="
@@ -16,7 +16,8 @@ defineEmits({})
     " 
     :class="[
         (rounded) ? 'rounded-full' : 'rounded',
-        (transparent) ? 'bg-transparent text-babyBlue-500 hover:bg-babyBlue-500 hover:text-neutral-100 border-babyBlue-500 hover:border-transparent' : 'bg-babyBlue-500 hover:bg-babyBlue-700 text-neutral-100'  
+        (transparent) ? 'bg-transparent text-babyBlue-500 hover:bg-babyBlue-500 hover:text-neutral-100 border-2 border-babyBlue-500 hover:border-transparent' : 'bg-babyBlue-500 hover:bg-babyBlue-700 text-neutral-100',
+        (innerClass) ? innerClass : '',
     ]"
     >
     <v-icon v-if="hasIcon" :name="icon" />

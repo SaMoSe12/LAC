@@ -175,15 +175,11 @@
 
 @layer components {
   .card {
-    @apply bg-neutral-200 dark:bg-slate-900 text-neutral-900 dark:text-neutral-100 h-[20rem] sm:h-[15rem] w-[45rem] border-2 border-salmon-400 dark:border-salmon-700 rounded-sm sm:rounded 
+    @apply bg-neutral-200 dark:bg-slate-900 text-neutral-900 dark:text-neutral-100 h-[20rem] sm:h-[15rem] md:w-[45rem] w-full md:border-2 border border-salmon-400 dark:border-salmon-700 md:rounded-sm rounded 
   }
 
   .nav-link {
     @apply font-sans after:block after:content-[''] after:w-full after:border-b-4 after:border-b-salmon-300 after:scale-x-0 transition-transform after:duration-500 after:ease-in-out after:hover:scale-x-100 after:origin-right
-  }
-
-  a.button, button.button {
-    @apply rounded-md border-2 bg-neutral-400 hover:bg-neutral-700 hover:text-primary
   }
 
 }
