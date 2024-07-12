@@ -2,10 +2,6 @@
 
 </script>
 <template>
-    <div class="card">
-        <h1 class="text-blue-400 font-bold hover:text-neutral-700">
-            Hola como estas
-        </h1>
-    </div>
+    <div class="md:h-11 md:w-full size-full bg-gradient-to-b from-salmon-400 via-salmon-300/50 to-salmon-100/10"></div>
 </template>
 <style scoped></style>

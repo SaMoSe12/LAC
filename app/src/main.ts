@@ -37,18 +37,22 @@ import About from './pages/About.vue'
 import Servicios from './pages/Servicios.vue'
 import Contacto from './pages/Contacto.vue'
 import Blogs from './pages/Blogs.vue'
+import Blog from './pages/Blog.vue'
+
 const routes = [
-    { path: '/', component: Home },
-    { path: '/about', component: About },
-    { path: '/servicios', component: Servicios },
-    { path: '/contacto', component: Contacto },
-    { path: '/ideas', component: Blogs }
+    { path: '/', component: Home, name: 'home' },
+    { path: '/about', component: About, name: 'about' },
+    { path: '/servicios', component: Servicios, name: 'servicios' },
+    { path: '/contacto', component: Contacto, name: 'contacto' },
+    { path: '/ideas', component: Blogs, name: 'blogs' },
+    { path: '/idea/:id', component: Blog, name: 'blog' }
 ]
 
 const router = createRouter({
     history: createWebHistory(),
     routes
 })
+
 
 createApp(App)
     .use(router)

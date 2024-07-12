@@ -1,7 +1,7 @@
 <script scoped setup lang="ts">
-    import { RouterLink } from 'vue-router'
+    import { RouterLink, useRoute, useRouter } from 'vue-router'
     import Button from './Button.vue'
-    import { ref } from 'vue'
+    import { ref, watch } from 'vue'
 
     // Check if the browser has the preferense set to dark mode.
     const prefersDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
@@ -9,11 +9,16 @@
     const navIsOpen = ref(false)
     const toggleDarkMode = () => {
         document.documentElement.classList.toggle('dark')
-        isDark.value = !isDark
+        isDark.value = !isDark.value
     }
     const openNavbar = () => {
         navIsOpen.value = !navIsOpen.value
     }
+
+    const router =  useRouter
+    router().afterEach(() => {
+        navIsOpen.value = false;
+    })
     
 </script>
 <template>
@@ -39,12 +44,14 @@
             </RouterLink>
         </div>
         <div class="flex justify-evenly items-center">
-            <Button :hasIcon="true" icon="bi-calendar2" :transparent="false" innerButton="Agenda una Cita" /> 
-            <Button :hasIcon="true" :icon="isDark ? 'fa-sun' : 'fa-moon'" :transparent="true" :rounded="true" innerButton="" @click="toggleDarkMode"/>
+            <!-- <Button :hasIcon="true" icon="bi-calendar2" :transparent="false" innerButton="Agenda una Cita" />  -->
+            <Button :hasIcon="true" icon="fa-moon" :transparent="true" :innerClass="(isDark) ? 'hidden':''" innerButton="" @click="toggleDarkMode"/>
+            <Button :hasIcon="true" icon="fa-sun" :transparent="true" :innerClass="(!isDark) ? 'hidden':''" innerButton="" @click="toggleDarkMode"/>
         </div>
     </nav>
-    <div @click="openNavbar" class="w-fit h-fit p-2 sticky top-3 left-4 md:hidden cursor-pointer"  :class="(navIsOpen) ? 'hidden': ''">
-        <v-icon class="size-4" name="fa-bars" scale="5"/>
+    <div @click="openNavbar" class="w-fit h-fit p-2 sticky top-2 left-2 bg-neutral-900/60 dark:bg-neutral-200/40 md:hidden cursor-pointer focus-visible:border focus-visible:border-neutral-900 z-50">
+        <v-icon class="size-6 flex justify-center items-center z-50" :class="(navIsOpen) ? 'hidden':''" name="fa-bars" scale="6"/>
+        <v-icon class="size-6 flex justify-center items-center z-50":class="(!navIsOpen) ? 'hidden':''" name="fa-times" scale="6"/>
     </div>
 
 </template>
