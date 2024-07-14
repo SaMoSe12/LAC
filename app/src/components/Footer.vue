@@ -13,7 +13,7 @@
                 <span>Lourdes Ayala</span> <span class="text-center md:text-sm text-xs font-sans font-medium md:mt-[-8px] mt-[-5px]">Coach Ontologico</span>
             </RouterLink>
 
-            <Button :hasIcon="true" icon="bi-calendar2" :transparent="false" innerButton="Agenda una Cita" buttonStyle="secondary" /> 
+            <Button :hasIcon="true" icon="bi-calendar2" :transparent="false" buttonStyle="secondary">Agenda una cita</Button> 
 
 
             

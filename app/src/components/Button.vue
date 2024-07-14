@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import {ref, watch} from 'vue'
 const props = defineProps<{
-    innerButton:string
     hasIcon: boolean
     icon?: string
     rounded?: boolean
@@ -14,6 +13,7 @@ watch(
         changeIcon.value = !changeIcon.value
     } 
 )
+
 </script>
 <template>
     <button class="
@@ -28,7 +28,7 @@ watch(
         (innerClass) ? innerClass : '',
     ]"
     >
-    <v-icon v-if="hasIcon" :name="(changeIcon) ? props.icon : icon" />
-    {{innerButton}}
+    <v-icon v-if="hasIcon" :name="(changeIcon) ? props.icon : icon" :class="($slots['innerButton']) ? 'mr-3' : ''" />
+    <slot name="innerButton"></slot>
 </button>
 </template>
