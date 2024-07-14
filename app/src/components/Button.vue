@@ -19,7 +19,8 @@ watch(
     <button class="
     font-bold 
     py-2 
-    px-4 
+    px-4
+    max-w-fit
     " 
     :class="[
         (rounded) ? 'rounded-full' : 'rounded',

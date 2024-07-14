@@ -175,7 +175,7 @@
 
 @layer components {
   .card {
-    @apply bg-neutral-200 dark:bg-slate-900 text-neutral-900 dark:text-neutral-100 h-[20rem] sm:h-[15rem] md:w-[45rem] w-full md:border-2 border border-salmon-400 dark:border-salmon-700 md:rounded-sm rounded 
+    @apply bg-neutral-200 dark:bg-slate-900 text-neutral-900 dark:text-neutral-100 md:h-[20rem] h-[15rem] md:w-[45rem] w-full md:border-2 border border-salmon-400 dark:border-salmon-700 md:rounded-sm rounded 
   }
 
   .nav-link {
