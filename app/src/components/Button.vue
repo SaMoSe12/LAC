@@ -21,6 +21,7 @@ watch(
     py-2 
     px-4
     max-w-fit
+    text-center
     " 
     :class="[
         (rounded) ? 'rounded-full' : 'rounded',
@@ -28,7 +29,7 @@ watch(
         (innerClass) ? innerClass : '',
     ]"
     >
-    <v-icon v-if="hasIcon" :name="(changeIcon) ? props.icon : icon" :class="($slots['innerButton']) ? 'mr-3' : ''" />
+    <v-icon v-if="hasIcon" :name="(changeIcon) ? props.icon : icon" :class="($slots['innerButton']) && hasIcon ? 'mr-3' : ''" />
     <slot name="innerButton"></slot>
 </button>
 </template>

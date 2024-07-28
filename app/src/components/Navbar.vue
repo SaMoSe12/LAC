@@ -48,9 +48,9 @@
             </RouterLink>
         </div>
         <div class="flex justify-evenly items-center">
-            <!-- <Button :hasIcon="true" icon="bi-calendar2" :transparent="false" innerButton="Agenda una Cita" />  -->
-            <Button :hasIcon="true" icon="fa-moon" :transparent="true" :innerClass="(isDark) ? 'hidden':''" innerButton="" @click="toggleDarkMode"/>
-            <Button :hasIcon="true" icon="fa-sun" :transparent="true" :innerClass="(!isDark) ? 'hidden':''" innerButton="" @click="toggleDarkMode"/>
+            
+            <!-- <Button :hasIcon="true" icon="fa-moon" :transparent="true" :innerClass="(isDark) ? 'hidden':''" innerButton="" @click="toggleDarkMode"/>
+            <Button :hasIcon="true" icon="fa-sun" :transparent="true" :innerClass="(!isDark) ? 'hidden':''" innerButton="" @click="toggleDarkMode"/> -->
         </div>
     </nav>
 </template>
