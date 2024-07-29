@@ -7,7 +7,7 @@
 </script>
 
 <template>
-  <Navbar/>
+  <Navbar />
   <main class="md:scroll-pt-20 scroll-pt-0  scroll-smooth">
     <RouterView />
   </main>
