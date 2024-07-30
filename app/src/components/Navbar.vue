@@ -23,7 +23,7 @@ router().afterEach(() => {
 </script>
 <template>
   <div
-    class="h-[5svh] fixed bg-salmon-400 top-0 left-0 sm:hidden z-50"
+    class="h-fix py-2 sticky  bg-salmon-400 right-0 top-0 left-0 sm:hidden z-50"
     :class="navIsOpen ? 'bg-transparent w-fit' : 'bg-salmon-400 w-svw'"
   >
     <v-icon

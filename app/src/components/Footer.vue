@@ -5,7 +5,7 @@
     
 </script>
 <template>
-    <div id="footer" class="w-full md:h-52 h-28 bg-gradient-to-r from-babyBlue-400 from-0% to-salmon-500 to-70% dark:from-sky-800 dark:to-salmon-800">
+    <div id="footer" class="w-full md:h-52 h-28 bg-gradient-to-r from-babyBlue-400 from-0% to-salmon-500 to-70% dark:from-sky-800 dark:to-salmon-800 relative z-40">
         <div class="md:max-h-96 max-h-44 flex flex-row items-center justify-evenly md:py-12 py-5">
             <RouterLink to="/" class="font-important text-neutral-100 dark:text-babyBlue-600 text-center flex flex-col justify-center align-middle text-xl md:text-2xl">
                 <span>Lourdes Ayala</span> <span class="text-center md:text-sm text-xs font-sans font-medium md:mt-[-8px] mt-[-5px]">Coach Ontologico</span>
@@ -24,11 +24,11 @@
                 <RouterLink to="/servicios" class="font-light text-neutral-100 hover:text-neutral-200 capitalize">servicios</RouterLink>
                 <RouterLink to="/blog" class="font-light text-neutral-100 hover:text-neutral-200 capitalize">Blog</RouterLink>
             </div>
-            <div class="flex flex-row items-center justify-center gap-4 ml-5 text-neutral-100 ">
-                <v-icon name="co-facebook" class="hover:text-neutral-200" />
-                <v-icon name="co-instagram" class="hover:text-neutral-200" />
-                <v-icon name="co-youtube" class="hover:text-neutral-200" />
-                <v-icon name="co-twitter" class="hover:text-neutral-200" />   
+            <div class="flex flex-row items-center justify-center gap-4 ml-5 text-neutral-100 mr-4">
+                <v-icon name="co-facebook" class="hover:text-babyBlue-400 cursor-pointer" />
+                <v-icon name="co-instagram" class="hover:text-babyBlue-400  cursor-pointer" />
+                <v-icon name="co-youtube" class="hover:text-babyBlue-400  cursor-pointer" />
+                <v-icon name="co-twitter" class="hover:text-babyBlue-400  cursor-pointer" />   
             </div>
         </div>
     </div>
