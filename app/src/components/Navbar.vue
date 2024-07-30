@@ -41,7 +41,6 @@ router().afterEach(() => {
       scale="6"
     />
   </div>
-  <!-- TODO que sea responsivo este nav -->
   <nav
     class="md:h-20 h-svh absolute md:sticky top-0 left-0 right-0 w-svw bg-salmon-400 md:grid-cols-3 md:grid z-40"
     :class="!navIsOpen ? 'hidden' : ''"
