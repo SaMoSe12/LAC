@@ -4,7 +4,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 import { OhVueIcon, addIcons } from 'oh-vue-icons'
 
 import { FaUser, FaUserPlus, FaPlus, FaTimes, FaBars, FaChartLine, FaSearch, FaStar, FaHeart, FaRegularHeart, FaMoon, FaSun } from 'oh-vue-icons/icons/fa'
-import { RiUserStarLine } from 'oh-vue-icons/icons/ri'
+import { CoFacebook, CoInstagram, CoTwitter, CoYoutube } from 'oh-vue-icons/icons/co'
+import { RiUserStarLine, RiEyeCloseLine, RiEyeLine } from 'oh-vue-icons/icons/ri'
 import { BiCalendar2 } from 'oh-vue-icons/icons/bi'
 
 import './style.css'
@@ -25,7 +26,13 @@ addIcons(
     FaMoon,
     FaSun,
     RiUserStarLine,
+    RiEyeCloseLine,
+    RiEyeLine,
     BiCalendar2,
+    CoFacebook,
+    CoInstagram,
+    CoTwitter,
+    CoYoutube
 )
 
 

@@ -1,29 +1,29 @@
 <script scoped setup lang="ts">
-import { RouterLink, useRouter } from "vue-router";
-import { ref } from "vue";
+import { RouterLink, useRouter } from "vue-router"
+import { ref } from "vue"
 
 // Check if the browser has the preferense set to dark mode.
 const prefersDarkMode =
   window.matchMedia &&
   window.matchMedia("(prefers-color-scheme: dark)").matches;
-const isDark = ref(prefersDarkMode);
-const navIsOpen = ref(false);
+const isDark = ref(prefersDarkMode)
+const navIsOpen = ref(false)
 const toggleDarkMode = () => {
-  document.documentElement.classList.toggle("dark");
-  isDark.value = !isDark.value;
+  document.documentElement.classList.toggle("dark")
+  isDark.value = !isDark.value
 };
 const openNavbar = () => {
-  navIsOpen.value = !navIsOpen.value;
+  navIsOpen.value = !navIsOpen.value
 };
 
 const router = useRouter;
 router().afterEach(() => {
-  navIsOpen.value = false;
-});
+  navIsOpen.value = false
+})
 </script>
 <template>
   <div
-    class="h-[5svh] fixed bg-salmon-400 top-0 left-0 sm:hidden z-50"
+    class="h-fix py-2 sticky  bg-salmon-400 right-0 top-0 left-0 sm:hidden z-50"
     :class="navIsOpen ? 'bg-transparent w-fit' : 'bg-salmon-400 w-svw'"
   >
     <v-icon
