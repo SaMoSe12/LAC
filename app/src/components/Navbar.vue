@@ -3,15 +3,15 @@ import { RouterLink, useRouter } from "vue-router"
 import { ref } from "vue"
 
 // Check if the browser has the preferense set to dark mode.
-const prefersDarkMode =
-  window.matchMedia &&
-  window.matchMedia("(prefers-color-scheme: dark)").matches;
-const isDark = ref(prefersDarkMode)
+// const prefersDarkMode =
+//   window.matchMedia &&
+//   window.matchMedia("(prefers-color-scheme: dark)").matches;
+// const isDark = ref(prefersDarkMode)
 const navIsOpen = ref(false)
-const toggleDarkMode = () => {
-  document.documentElement.classList.toggle("dark")
-  isDark.value = !isDark.value
-};
+// const toggleDarkMode = () => {
+//   document.documentElement.classList.toggle("dark")
+//   isDark.value = !isDark.value
+// };
 const openNavbar = () => {
   navIsOpen.value = !navIsOpen.value
 };
@@ -42,7 +42,7 @@ router().afterEach(() => {
     />
   </div>
   <nav
-    class="md:h-20 h-svh absolute md:sticky top-0 left-0 right-0 w-svw bg-salmon-400 md:grid-cols-3 md:grid z-40"
+    class="md:h-20 h-svh sticky top-0 left-0 right-0 w-svw bg-salmon-400 md:grid-cols-3 md:grid z-40"
     :class="!navIsOpen ? 'hidden' : ''"
   >
     <div class="flex items-center justify-evenly flex-col md:flex-row">
