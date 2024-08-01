@@ -31,6 +31,13 @@ import {
   RiEyeCloseLine,
   RiEyeLine,
 } from "oh-vue-icons/icons/ri";
+import { BiSquareFill } from "oh-vue-icons/icons/bi";
+import {
+  GiDiamondTrophy,
+  GiBookAura,
+  GiSquare,
+  GiPodiumWinner,
+} from "oh-vue-icons/icons/gi";
 import { BiCalendar2 } from "oh-vue-icons/icons/bi";
 
 import "./style.css";
@@ -60,7 +67,12 @@ addIcons(
   CoInstagram,
   CoTwitter,
   CoYoutube,
-  CoLinkedin
+  CoLinkedin,
+  GiSquare,
+  GiBookAura,
+  GiDiamondTrophy,
+  GiPodiumWinner,
+  BiSquareFill
 );
 
 /**
