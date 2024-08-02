@@ -14,7 +14,7 @@
             <h2 class="text-2xl font-semibold text-slate-800 mb-2">{{ title }}</h2>
             <p class="text-slate-600 mb-4" v-if="description">{{ description }}</p>
             <div class="flex items-center">
-                <img src="/img/lulu-blog.jpg" alt="" class="w-8 h-8 rounded-full mr-2">
+                <img src="/img/lulu-blog_Mobile.jpg" alt="" class="w-8 h-8 rounded-full mr-2">
                 <div class="align-self-end justify-self-end">
                     <p class="text-slate-800 font-semibold">{{ authorName }}</p>
                     <p class="text-slate-500">{{ publishedDate }}</p>

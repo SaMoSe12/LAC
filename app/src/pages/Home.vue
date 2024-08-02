@@ -95,17 +95,16 @@
   </section>
   <section id="home-ideasStrip">
     <TitleStrip><template #titleString>Ideas</template></TitleStrip>
-    <div class="grid gap-4 md:grid-cols-5 sm:grid-cols-3 sm:grid-rows-1 grid-cols-1 p-6">
+    <div class="grid gap-3 sm:gap-4 sm:grid-cols-4 sm:grid-rows-1 grid-cols-1 p-6">
       <Card title=" ¿Listo para el despegue? Descubre el secreto detrás del éxito " description=" Aprende las estrategias probadas que te llevarán a alcanzar tus meta" img-url="/img/b1_Pequeño.jpg" author-name="Lourdes Ayala" published-date="25/06/2024" />
       <Card title="Tu problema tiene solución: ¡Descúbrela aquí!" description=" ¿Cansado de luchar con tu problema? Te presentamos la solución definitiva para que puedas vivir una vida más plena y feliz." img-url="/img/b2_Pequeño.jpg" author-name="Lourdes Ayala" published-date="25/06/2024" />
       <Card title="¡Atención! Esto es lo que necesitas saber sobre la Ontologia" description="Información esencial y consejos prácticos sobre la ontologia que te ayudarán a tomar mejores decisiones y alcanzar tus objetivos." img-url="/img/b3_Pequeño.jpg" author-name="Lourdes Ayala" published-date="25/06/2024" />
-      <Card title="Un viaje a través de tu ser" description="Sumérgete en el universo de ti y descubre los secretos, curiosidades y maravillas." img-url="/img/b4_Pequeño.jpg" author-name="Lourdes Ayala" published-date="25/06/2024" />
       <Card title="Exito en la vida cotidiana: Cómo impacta en nuestras vidas y qué podemos aprende" description="Explora la presencia del exito en nuestro día a día y reflexiona sobre cómo influye en nuestras decisiones, acciones y perspectivas." img-url="/img/b5_Pequeño.jpg" author-name="Lourdes Ayala" published-date="25/06/2024" />
     </div>
   </section>
   <section id="home-contacto">
     <div class="bg-neutral-700 w-full h-full flex flex-col justify-around sm:flex-row gap-4 sm:p-14 p-5">
-      <div class="bg-neutral-200 p-2 sm:p-5 sm:w-1/3 w-full rounded-md m-6">
+      <div class="bg-neutral-200 p-2 sm:p-5 sm:w-1/3 w-full h-full rounded-md m-6">
         <p class="text-neutral-900 font-semibold text-2xl text-center mb-5">Mandáme un mensaje</p>
         <form class="mb-4">
           <div class="mb-6">
@@ -123,9 +122,14 @@
             <label for="contact_message" class="block mb-2 text-sm text-neutral-600 dark:text-neutral-200">Mensaje</label>
             <textarea name="message" id="contact_message" placeholder="Tu Mensaje" class="w-full px-3 py-2 placeholder-slate-600 border border-neutral-800 rounded-md focus:outline-none focus:ring focus:ring-babyBlue-600 dark:bg-neutral-700 dark:text-neutral-50 dark:placeholder-neutral-300 dark:border-neutral-700 dark:focus:ring-slate-100 dark:focus:border-neutral-300"></textarea>
           </div>
+          <div class="my-3 flex justify-center w-full">
+            <Button :has-icon="true" icon="fa-envelope">
+              <template #innerButton>Enviar</template>
+            </Button>
+          </div>
         </form>
       </div>
-      <div class="bg-neutral-200 p-2 sm:p-5 flex-col flex items-center justify-around sm:w-1/3 w-full rounded-md">
+      <div class="bg-neutral-200 p-2 sm:p-5 flex-col flex items-center justify-around sm:w-1/3 w-full h-full rounded-md">
         <p class="text-neutral-900 font-semibold text-2xl">Información de Contacto</p>
         <a href="mailto:info@mentoringontologico.com" target="_blank" class="text-salmon-400 decoration-none font-medium flex cursor-pointer items-center justify-stretch w-full sm:w-4/5">
           <span class="mr-2">

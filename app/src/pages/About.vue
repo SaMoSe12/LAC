@@ -1,11 +1,7 @@
 <script setup lang="ts">
-
+    import TitleStrip from '../components/TitleStrip.vue';
 </script>
 <template>
-    <div class="mx-3">
-        <h1 class="text-neutral-700 font-bold cursor-pointer select-none">
-            TODO ABOUT <v-icon name="fa-user"/>
-        </h1>
-    </div>
+    <TitleStrip><template #titleString> Acerca de mí</template></TitleStrip>
 </template>
 <style scoped></style>
