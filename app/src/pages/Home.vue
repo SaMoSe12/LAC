@@ -153,11 +153,11 @@
         </p>
         <hr/>
         <div class="flex flex-row gap-2 text-salmon-400">
-          <v-icon name="co-facebook"  class="hover:text-babyBlue-300 cursor-pointer" scale="1.7"/>
-          <v-icon name="co-instagram" class="hover:text-babyBlue-300 cursor-pointer" scale="1.7"/>
-          <v-icon name="co-twitter"   class="hover:text-babyBlue-300 cursor-pointer" scale="1.7"/>
-          <v-icon name="co-youtube"   class="hover:text-babyBlue-300 cursor-pointer" scale="1.7"/>
-          <v-icon name="co-linkedin"  class="hover:text-babyBlue-300 cursor-pointer" scale="1.7"/>
+          <v-icon name="co-facebook"  class="hover:text-babyBlue-600 cursor-pointer" scale="1.7"/>
+          <v-icon name="co-instagram" class="hover:text-babyBlue-600 cursor-pointer" scale="1.7"/>
+          <v-icon name="co-twitter"   class="hover:text-babyBlue-600 cursor-pointer" scale="1.7"/>
+          <v-icon name="co-youtube"   class="hover:text-babyBlue-600 cursor-pointer" scale="1.7"/>
+          <v-icon name="co-linkedin"  class="hover:text-babyBlue-600 cursor-pointer" scale="1.7"/>
         </div>
       </div>
     </div>

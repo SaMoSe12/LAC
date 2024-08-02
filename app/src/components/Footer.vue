@@ -27,10 +27,10 @@
                 <RouterLink to="/ideas" class="font-light text-neutral-100 hover:text-neutral-200 capitalize">Ideas</RouterLink>
             </div>
             <div class="flex flex-row items-center justify-center gap-4 ml-5 text-neutral-100 mr-4">
-                <v-icon name="co-facebook" class="hover:text-babyBlue-400 cursor-pointer" />
-                <v-icon name="co-instagram" class="hover:text-babyBlue-400  cursor-pointer" />
-                <v-icon name="co-youtube" class="hover:text-babyBlue-400  cursor-pointer" />
-                <v-icon name="co-twitter" class="hover:text-babyBlue-400  cursor-pointer" />   
+                <v-icon name="co-facebook" class="hover:text-babyBlue-600 cursor-pointer" />
+                <v-icon name="co-instagram" class="hover:text-babyBlue-600  cursor-pointer" />
+                <v-icon name="co-youtube" class="hover:text-babyBlue-600  cursor-pointer" />
+                <v-icon name="co-twitter" class="hover:text-babyBlue-600  cursor-pointer" />   
             </div>
         </div>
     </div>
