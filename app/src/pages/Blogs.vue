@@ -2,6 +2,6 @@
     import TitleStrip from '../components/TitleStrip.vue'
 </script>
 <template class="p-2 m-2">
-    <TitleStrip>Ideas</TitleStrip>
+    <TitleStrip><template #titleString>Ideas</template></TitleStrip>
 </template>
 <style scoped></style>
