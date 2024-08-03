@@ -22,7 +22,7 @@
                 <RouterLink to="/about" class="font-light text-neutral-100 hover:text-neutral-200 capitalize">about</RouterLink>
                 <RouterLink to="/contacto" class="font-light text-neutral-100 hover:text-neutral-200 capitalize">contacto</RouterLink>
                 <RouterLink to="/servicios" class="font-light text-neutral-100 hover:text-neutral-200 capitalize">servicios</RouterLink>
-                <RouterLink to="/blog" class="font-light text-neutral-100 hover:text-neutral-200 capitalize">Blog</RouterLink>
+                <RouterLink to="/ideas" class="font-light text-neutral-100 hover:text-neutral-200 capitalize">Blog</RouterLink>
             </div>
             <div class="flex flex-row items-center justify-center gap-4 ml-5 text-neutral-100 mr-4">
                 <v-icon name="co-facebook" class="hover:text-babyBlue-400 cursor-pointer" />

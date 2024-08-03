@@ -71,7 +71,7 @@
             <p class="text-lg font-medium">Filosofia y enfoque</p>
             <p>Mi filosofía como coach ontológica se basa en la premisa de que cada individuo posee un potencial ilimitado para crear la vida que desea. Mi enfoque se centra en generar un espacio de confianza y reflexión profunda, donde se puedan explorar sus creencias, emociones y patrones de comportamiento. A través de preguntas poderosas y escucha activa, los acompaño en un viaje de autodescubrimiento, empoderándolos para diseñar una vida más auténtica y alineada con sus valores.</p>
           </div>
-          <div class="flex flex-col justify-start items-center">
+          <div class="flex flex-col justify-start items-center sm:ml-2">
             <span>
               <v-icon label="profesional-path" class="drop-shadow-md">
                 <v-icon name="bi-square-fill" scale="1.75" class="text-salmon-400"/>
@@ -100,6 +100,11 @@
       <Card title="Tu problema tiene solución: ¡Descúbrela aquí!" description=" ¿Cansado de luchar con tu problema? Te presentamos la solución definitiva para que puedas vivir una vida más plena y feliz." img-url="/img/b2_Pequeño.jpg" author-name="Lourdes Ayala" published-date="25/06/2024" />
       <Card title="¡Atención! Esto es lo que necesitas saber sobre la Ontologia" description="Información esencial y consejos prácticos sobre la ontologia que te ayudarán a tomar mejores decisiones y alcanzar tus objetivos." img-url="/img/b3_Pequeño.jpg" author-name="Lourdes Ayala" published-date="25/06/2024" />
       <Card title="Exito en la vida cotidiana: Cómo impacta en nuestras vidas y qué podemos aprende" description="Explora la presencia del exito en nuestro día a día y reflexiona sobre cómo influye en nuestras decisiones, acciones y perspectivas." img-url="/img/b5_Pequeño.jpg" author-name="Lourdes Ayala" published-date="25/06/2024" />
+    </div>
+    <div class="w-full h-fit my-4 flex justify-center">
+      <RouterLink to="/ideas">
+        <Button :has-icon="false" class="bg-salmon-400 hover:bg-salmon-600"><template #innerButton>Leer Más</template></Button>
+      </RouterLink>
     </div>
   </section>
   <section id="home-contacto">
