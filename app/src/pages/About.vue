@@ -2,7 +2,7 @@
 </script>
 <template>
     <div class=" h-svh w-svw">
-        <div class="bg-gradient-to-tr from-neutral-200 to-slate-200 via-zinc-200 sm:px-3 px-1 ">
+        <div class="bg-gradient-to-tr from-neutral-200 to-slate-200 via-zinc-200 sm:px-5 px-3 ">
             <div class="grid md:grid-cols-3 py-4 grid-cols-1">
                 <div class="mt-10">
                     <p>
