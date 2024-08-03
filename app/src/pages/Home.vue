@@ -107,11 +107,6 @@
         <Button :has-icon="false" inner-class="bg-salmon-400 hover:bg-salmon-600"><template #innerButton>Leer Más</template></Button>
       </RouterLink>
     </div>
-    <div class="w-full h-fit my-4 flex justify-center">
-      <RouterLink to="/ideas">
-        <Button :has-icon="false" class="bg-salmon-400 hover:bg-salmon-600"><template #innerButton>Leer Más</template></Button>
-      </RouterLink>
-    </div>
   </section>
   <section id="home-contacto">
     <div class="bg-neutral-700 w-full h-full flex flex-col justify-around sm:flex-row gap-4 sm:p-14 p-5">
