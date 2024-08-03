@@ -100,6 +100,12 @@
       <Card title="Tu problema tiene solución: ¡Descúbrela aquí!" description=" ¿Cansado de luchar con tu problema? Te presentamos la solución definitiva para que puedas vivir una vida más plena y feliz." img-url="/img/b2_Pequeño.jpg" author-name="Lourdes Ayala" published-date="25/06/2024" />
       <Card title="¡Atención! Esto es lo que necesitas saber sobre la Ontologia" description="Información esencial y consejos prácticos sobre la ontologia que te ayudarán a tomar mejores decisiones y alcanzar tus objetivos." img-url="/img/b3_Pequeño.jpg" author-name="Lourdes Ayala" published-date="25/06/2024" />
       <Card title="Exito en la vida cotidiana: Cómo impacta en nuestras vidas y qué podemos aprende" description="Explora la presencia del exito en nuestro día a día y reflexiona sobre cómo influye en nuestras decisiones, acciones y perspectivas." img-url="/img/b5_Pequeño.jpg" author-name="Lourdes Ayala" published-date="25/06/2024" />
+
+    </div>
+    <div class="flex items-center justify-center mb-6 sm:mb-10">
+      <RouterLink to="/ideas">
+        <Button :has-icon="false" inner-class="bg-salmon-400 hover:bg-salmon-600"><template #innerButton>Leer Más</template></Button>
+      </RouterLink>
     </div>
     <div class="w-full h-fit my-4 flex justify-center">
       <RouterLink to="/ideas">
@@ -152,11 +158,11 @@
         </p>
         <hr/>
         <div class="flex flex-row gap-2 text-salmon-400">
-          <v-icon name="co-facebook"  class="hover:text-babyBlue-300 cursor-pointer" scale="1.7"/>
-          <v-icon name="co-instagram" class="hover:text-babyBlue-300 cursor-pointer" scale="1.7"/>
-          <v-icon name="co-twitter"   class="hover:text-babyBlue-300 cursor-pointer" scale="1.7"/>
-          <v-icon name="co-youtube"   class="hover:text-babyBlue-300 cursor-pointer" scale="1.7"/>
-          <v-icon name="co-linkedin"  class="hover:text-babyBlue-300 cursor-pointer" scale="1.7"/>
+          <v-icon name="co-facebook"  class="hover:text-babyBlue-600 cursor-pointer" scale="1.7"/>
+          <v-icon name="co-instagram" class="hover:text-babyBlue-600 cursor-pointer" scale="1.7"/>
+          <v-icon name="co-twitter"   class="hover:text-babyBlue-600 cursor-pointer" scale="1.7"/>
+          <v-icon name="co-youtube"   class="hover:text-babyBlue-600 cursor-pointer" scale="1.7"/>
+          <v-icon name="co-linkedin"  class="hover:text-babyBlue-600 cursor-pointer" scale="1.7"/>
         </div>
       </div>
     </div>

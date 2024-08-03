@@ -11,9 +11,11 @@
                 <span>Lourdes Ayala</span> <span class="text-center md:text-sm text-xs font-sans font-medium md:mt-[-8px] mt-[-5px]">Coach Ontologico</span>
             </RouterLink>
             <p class="text-neutral-100 dark:text-neutral-500 text-center">&copy; 2024 Lourdes Ayala Mentoring Ontologico</p>
-            <Button :hasIcon="false" :transparent="false" buttonStyle="secondary">
-                <template #innerButton>Contacto</template>
-            </Button> 
+            <RouterLink to="/contacto">
+                <Button :hasIcon="false" :transparent="false" buttonStyle="secondary">
+                    <template #innerButton>Contacto</template>
+                </Button> 
+            </RouterLink>
         </div>
         <div class="w-[95%] h-0.5 mx-auto bg-slate-50/65 shadow-neutral-900  hover:shadow-md lg:hover:shadow-lg" />
         <div class="flex flex-row justify-between items-center">
@@ -25,10 +27,10 @@
                 <RouterLink to="/ideas" class="font-light text-neutral-100 hover:text-neutral-200 capitalize">Blog</RouterLink>
             </div>
             <div class="flex flex-row items-center justify-center gap-4 ml-5 text-neutral-100 mr-4">
-                <v-icon name="co-facebook" class="hover:text-babyBlue-400 cursor-pointer" />
-                <v-icon name="co-instagram" class="hover:text-babyBlue-400  cursor-pointer" />
-                <v-icon name="co-youtube" class="hover:text-babyBlue-400  cursor-pointer" />
-                <v-icon name="co-twitter" class="hover:text-babyBlue-400  cursor-pointer" />   
+                <v-icon name="co-facebook" class="hover:text-babyBlue-600 cursor-pointer" />
+                <v-icon name="co-instagram" class="hover:text-babyBlue-600  cursor-pointer" />
+                <v-icon name="co-youtube" class="hover:text-babyBlue-600  cursor-pointer" />
+                <v-icon name="co-twitter" class="hover:text-babyBlue-600  cursor-pointer" />   
             </div>
         </div>
     </div>
