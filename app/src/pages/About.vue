@@ -3,7 +3,7 @@
 <template>
     <div class=" h-svh w-svw">
         <div class="bg-gradient-to-tr from-neutral-200 to-slate-200 via-zinc-200 sm:px-5 px-3 ">
-            <div class="grid md:grid-cols-3 py-4 grid-cols-1">
+            <div class="grid md:grid-cols-3 pt-4 pb-0 grid-cols-1">
                 <div class="mt-10">
                     <p>
                         Soy <span class="font-important text-xl text-salmon-400">Lulu Ayala</span>, coach ontológica apasionada por el crecimiento personal y el potencial humano. A través de conversaciones poderosas y herramientas transformadoras, acompaño a personas y equipos a descubrir nuevas perspectivas, superar obstáculos y alcanzar sus metas más ambiciosas. Creo firmemente en la capacidad innata de cada individuo para diseñar la vida que desea y estoy comprometida a ser tu guía en ese viaje de autodescubrimiento y realización.
