@@ -1,7 +1,7 @@
 <script setup lang="ts">
 </script>
 <template>
-    <div class="w-svw">
+    <div>
         <div class="bg-gradient-to-tr from-neutral-200 to-slate-200 via-zinc-200 sm:px-5 px-3 ">
             <div class="grid md:grid-cols-3 pt-4 pb-0 grid-cols-1">
                 <div class="mt-10">
@@ -10,12 +10,12 @@
                     </p>
                     <div class="mt-2">
                         <p>
-                            Mi misión es inspirar y empoderar a las personas a vivir una vida plena y significativa, alineada con sus valores y propósito. A través del coaching ontológico, busco generar transformaciones profundas y duraderas, tanto a nivel individual como colectivo, contribuyendo a un mundo más consciente, compasivo y conectado.
+                            <span class="text-salmon-400 text-lg font-bold">Mi misión</span> es inspirar y empoderar a las personas a vivir una vida plena y significativa, alineada con sus valores y propósito. A través del coaching ontológico, busco generar transformaciones profundas y duraderas, tanto a nivel individual como colectivo, contribuyendo a un mundo más consciente, compasivo y conectado.
                         </p>
                     </div>
                 </div>
                 <div class="flex flex-col justify-center items-center">
-                    <div><h1 class="font-title text-5xl leading-normal text-transparent bg-clip-text bg-gradient-to-r from-salmon-400 to-fuchsia-700 ">Acerca de mí</h1></div>
+                    <div><h1 class="font-title select-none text-5xl leading-normal text-transparent bg-clip-text bg-gradient-to-r from-salmon-400 to-fuchsia-700 ">Acerca de mí</h1></div>
                     <div>
                         <figure class="aspect-auto">
                             <img class="w-full select-none" src="/img/lulu-home-no-bg.png" alt="Lourdes Ayala">
