@@ -31,14 +31,14 @@ import {
   RiEyeCloseLine,
   RiEyeLine,
 } from "oh-vue-icons/icons/ri";
-import { BiSquareFill } from "oh-vue-icons/icons/bi";
+import { BiSquareFill, BiCalendar2 } from "oh-vue-icons/icons/bi";
 import {
   GiDiamondTrophy,
   GiBookAura,
   GiSquare,
   GiPodiumWinner,
 } from "oh-vue-icons/icons/gi";
-import { BiCalendar2 } from "oh-vue-icons/icons/bi";
+import { HiClock } from "oh-vue-icons/icons/hi";
 
 import "./style.css";
 
@@ -59,6 +59,7 @@ addIcons(
   FaMobile,
   FaEnvelope,
   FaSun,
+  HiClock,
   RiUserStarLine,
   RiEyeCloseLine,
   RiEyeLine,
@@ -83,7 +84,7 @@ import About from "./pages/About.vue";
 import Servicios from "./pages/Servicios.vue";
 import Contacto from "./pages/Contacto.vue";
 import Blogs from "./pages/Blogs.vue";
-import Blog from "./pages/Blog.vue";
+import Blog from "./pages/BlogPost.vue";
 
 const routes = [
   { path: "/", component: Home, name: "home" },
@@ -99,7 +100,7 @@ const router = createRouter({
   routes,
   scrollBehavior() {
     // always scroll to top
-    return { top: 0 }
+    return { top: 0 };
   },
 });
 
