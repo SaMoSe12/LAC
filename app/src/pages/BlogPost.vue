@@ -14,8 +14,8 @@
         readTime.value = estimateReadingTime(props.body);
     })
     const estimateReadingTime = (text:string):number => {
-        const wpm = 180; // Words per minute
-        const wc = text.split(/\s+/).length; // Word Count
+        const wpm:number = 180; // Words per minute
+        const wc:number = text.split(/\s+/).length; // Word Count
         return Math.ceil(wc / wpm); // read Time in minutes
     }
 </script>
@@ -25,6 +25,9 @@
         <p class="text-base font-thin text-neutral-300 dark:text-neutral-100">
             <span class="px-2"><v-icon name="bi-calendar2"/>{{publishedDate}}</span> | <v-icon name="hi-clock"/>{{readTime}} minutos
         </p>
+    </div>
+    <div class="container bg-neutral-200 dark:bg-neutral-800 text-gray-900 dark:text-gray-200">
+        {{body}}
     </div>
 
 </template>
