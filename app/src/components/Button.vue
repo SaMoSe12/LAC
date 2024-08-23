@@ -24,7 +24,7 @@ watch(
     max-w-fit
     text-center
     " 
-    :type="(buttonType) ? 'button' : buttonType"
+    type="button"
     :class="[
         (rounded) ? 'rounded-full' : 'rounded',
         (transparent) ? 'bg-babyBlue-500/15 text-babyBlue-500 hover:bg-babyBlue-500/50 hover:text-neutral-100 border-2 border-babyBlue-500/5 hover:border-babyBlue-500' : 'bg-babyBlue-500 hover:bg-babyBlue-700 text-neutral-100',
