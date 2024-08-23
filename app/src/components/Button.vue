@@ -6,7 +6,7 @@ const props = defineProps<{
     rounded?: boolean
     transparent?: boolean
     innerClass?: string
-    type?: ButtonHTMLAttributes
+    buttonType?: ButtonHTMLAttributes
 }>()
 const changeIcon = ref(false)
 watch(
@@ -24,7 +24,7 @@ watch(
     max-w-fit
     text-center
     " 
-    :type="(typeof type !== 'undefined') ? type : 'button'"
+    :type="(buttonType) ? 'button' : buttonType"
     :class="[
         (rounded) ? 'rounded-full' : 'rounded',
         (transparent) ? 'bg-babyBlue-500/15 text-babyBlue-500 hover:bg-babyBlue-500/50 hover:text-neutral-100 border-2 border-babyBlue-500/5 hover:border-babyBlue-500' : 'bg-babyBlue-500 hover:bg-babyBlue-700 text-neutral-100',
